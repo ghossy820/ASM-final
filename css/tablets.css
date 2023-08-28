@@ -1,0 +1,50 @@
+@media (max-width: 1024px) {
+  .custom-img {
+    width: 9rem !important;
+    height: 9rem !important;
+  }
+
+  /* ==> SECTION CERTIFICATE */
+  /*=*=*=*=*=*=*=*=*=*=*/
+  .divider {
+    position: relative;
+  }
+
+  /* ===> Thiết lập đường giữa ngang */
+  .divider::before {
+    content: "";
+    position: absolute;
+    background-color: #d6c08d;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+  }
+
+  /* ===> Thiết lập đường giữa dọc */
+  .divider::after {
+    content: "";
+    position: absolute;
+    background-color: #d6c08d;
+    height: 1px;
+    width: 35%;
+    transform: rotate(90deg);
+    top: 23%;
+    left: 32.5%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* ==> HEADER */
+  /*=*=*=*=*=*=*=*=*=*=*/
+  .custom-boder-center::after {
+    content: "";
+    display: block;
+    background-color: #dee2e6;
+    height: 2px;
+    transform: rotate(90deg);
+    width: 49px;
+    position: absolute;
+    top: 50%;
+    right: -14%; /* ===> Di chuyển thanh giữa*/
+  }
+}

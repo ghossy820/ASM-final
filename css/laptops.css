@@ -1,0 +1,5 @@
+@media (min-width: 768px) {
+  .border-sm-0 {
+    border-bottom: none !important; /* ===> Thiết lập làm mất border-bottom */
+  }
+}

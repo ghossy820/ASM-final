@@ -1,0 +1,98 @@
+body {
+  position: relative;
+}
+
+/*=*=*=*=*=*=*=*=*=*=*/
+/* ==> HEADER */
+/*=*=*=*=*=*=*=*=*=*=*/
+.banner {
+  background-color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/banner.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+
+.sub-text {
+  color: #ccc;
+}
+
+.custom-position {
+  top: 0.5rem;
+  right: 1rem;
+}
+
+.custom-nav-item {
+  flex: 1; /* ===> "flex: 1" để đảm bảo rằng các mục con sẽ được căn chỉnh đều nhau mà không phụ thuộc vào nội dung bên trong. Tuy "nav-fill" vẫn có chức năng này, nhưng biểu hiện thuộc tính sẽ không được rõ ràng nếu lượng chữ trong mỗi mục con khá nhau.*/
+  text-align: center;
+}
+
+/*=*=*=*=*=*=*=*=*=*=*/
+/* ==> SECTION ALL */
+/*=*=*=*=*=*=*=*=*=*=*/
+/* ===> Căn giữa lớp theo trục X-Y ngay tại chỗ */
+.custom-avatar {
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ===> Thiết lập khối tròn cho phần tử biểu tượng mục sở thích */
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+/* ===> Thiết lập căn giữa hai phần tử */
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===> Thiết lập hộp điểm */
+.point-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.point-none {
+  display: inline-block;
+  border: 1px solid #dee2e6;
+  width: 4rem;
+  height: 0.8rem;
+  border-radius: 100px;
+}
+
+.point-have {
+  width: 4rem;
+  height: 0.8rem;
+  background-color: #0099ff;
+  border-radius: 100px;
+  display: inline-block;
+  border: 1px solid #dee2e6;
+}
+
+/*=*=*=*=*=*=*=*=*=*=*/
+/* ==> SECTION PROJECT */
+/*=*=*=*=*=*=*=*=*=*=*/
+.nowrap {
+  white-space: nowrap;
+}
+
+/*=*=*=*=*=*=*=*=*=*=*/
+/* ==> NÚT TRỞ LẠI ĐẦU TRANG */
+/*=*=*=*=*=*=*=*=*=*=*/
+.back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}

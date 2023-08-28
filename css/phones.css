@@ -1,0 +1,32 @@
+@media (max-width: 425px) {
+  /* ==> SECTION HEADER */
+  /*=*=*=*=*=*=*=*=*=*=*/
+  .banner {
+    height: 30vh;
+  }
+
+  .custom-navigation {
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 10px;
+    background-color: #fff;
+    left: 0;
+  }
+
+  .custom-display {
+    display: none;
+  }
+
+  /* ==> SECTION CERTIFICATE */
+  /*=*=*=*=*=*=*=*=*=*=*/
+  .border-bottom-1 {
+    border-bottom: 1px solid #d6c08d; /* ===> Thiết lập hiện border-bottom */
+  }
+
+  .divider::after,
+  .divider::before {
+    display: none;
+  }
+}
